@@ -2,7 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="529159b8-81b1-4dc9-b59c-47c30fc46c9a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/1.html" beforeDir="false" afterPath="$PROJECT_DIR$/1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/module5.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form/src/app/register-form/register-form.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form/src/app/register-form/register-form.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form/src/app/register-form/register-form.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form/src/app/register-form/register-form.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form/src/app/todo.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form/src/app/todo/todo.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form/src/app/todo/todo.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form/src/app/todo/todo.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form/src/app/todo/todo.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,16 +41,22 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2FTprnV4NEhNAavMFXfhSiqt0Lt" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="D:\CodeGym\Module5\module5\6_Angular_Form\form\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -45,6 +69,13 @@
       <updated>1664526129930</updated>
       <workItem from="1664526131046" duration="19000" />
       <workItem from="1664526487921" duration="26000" />
+      <workItem from="1664527653773" duration="749000" />
+      <workItem from="1664540236110" duration="5507000" />
+      <workItem from="1664611587427" duration="1758000" />
+      <workItem from="1664760248507" duration="5279000" />
+      <workItem from="1664779873466" duration="3284000" />
+      <workItem from="1664801671635" duration="3931000" />
+      <workItem from="1664818147365" duration="4565000" />
     </task>
     <servers />
   </component>
@@ -61,5 +92,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
