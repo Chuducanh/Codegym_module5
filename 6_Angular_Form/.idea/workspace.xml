@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="529159b8-81b1-4dc9-b59c-47c30fc46c9a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/module5.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/form/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/form/src/app/register-form/register-form.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/form/src/app/register-form/register-form.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/form/src/app/register-form/register-form.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/form/src/app/register-form/register-form.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/form/src/app/todo.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/form/src/app/todo/todo.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/form/src/app/todo/todo.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/form/src/app/todo/todo.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/form/src/app/todo/todo.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +58,8 @@
       <workItem from="1664779873466" duration="3284000" />
       <workItem from="1664801671635" duration="3931000" />
       <workItem from="1664818147365" duration="4565000" />
+      <workItem from="1664874711875" duration="184000" />
+      <workItem from="1664966298778" duration="101000" />
     </task>
     <servers />
   </component>
