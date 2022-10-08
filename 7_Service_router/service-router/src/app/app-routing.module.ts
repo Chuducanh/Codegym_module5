@@ -1,12 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {TimelinesComponent} from './timelines/timelines.component';
-import {SongComponent} from "./song/song.component";
-import {SongPlayerComponent} from "./song-player/song-player.component";
-import {ProductManagementComponent} from "./product/product-management/product-management.component";
-import {ProductCreateComponent} from "./product/product-create/product-create.component";
-import {ProductDeleteComponent} from "./product/product-delete/product-delete.component";
-import {ProductEditComponent} from "./product/product-edit/product-edit.component";
+import {SongComponent} from "./mp3/song/song.component";
+import {SongPlayerComponent} from "./mp3/song-player/song-player.component";
 
 const routes: Routes = [
   {
@@ -22,20 +18,12 @@ const routes: Routes = [
     }]
   },
   {
-    path: 'product/list',
-    component: ProductManagementComponent
+    path: 'product',
+    loadChildren: () => import('./product/product.module').then(module => module.ProductModule)
   },
   {
-    path: 'product/create',
-    component: ProductCreateComponent
-  },
-  {
-    path: 'product/delete/:id',
-    component: ProductDeleteComponent
-  },
-  {
-    path: 'product/edit/:id',
-    component: ProductEditComponent
+    path: 'category',
+    loadChildren: () => import('./category/category.module').then(module => module.CategoryModule)
   }
 ];
 

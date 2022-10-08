@@ -4,31 +4,25 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TimelinesComponent } from './timelines/timelines.component';
-import { ProductManagementComponent } from './product/product-management/product-management.component';
 import {HttpClientModule} from '@angular/common/http';
-import { SongComponent } from './song/song.component';
-import { SongPlayerComponent } from './song-player/song-player.component';
-import { ProductCreateComponent } from './product/product-create/product-create.component';
+import { SongComponent } from './mp3/song/song.component';
+import { SongPlayerComponent } from './mp3/song-player/song-player.component';
 import {ReactiveFormsModule} from "@angular/forms";
-import { ProductDeleteComponent } from './product/product-delete/product-delete.component';
-import { ProductEditComponent } from './product/product-edit/product-edit.component';
+import {SharedModule} from "./shared/shared.module";
 
 @NgModule({
   declarations: [
     AppComponent,
     TimelinesComponent,
-    ProductManagementComponent,
     SongComponent,
     SongPlayerComponent,
-    ProductCreateComponent,
-    ProductDeleteComponent,
-    ProductEditComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
