@@ -1,0 +1,96 @@
+<h2>Chỉnh sửa thông tin xe khách có số xe {{id}}</h2>
+<form [formGroup]="formEdit" (ngSubmit)="onSubmit(id)">
+  <div class="form-group">
+    <input type="hidden" class="form-control" formControlName="id">
+  </div>
+  <div class="form-group">
+    <label>Loại xe: </label>
+    <input type="text" class="form-control" formControlName="type">
+    <div *ngIf="type.invalid && (type.touched || type.dirty)" class="alert alert-danger">
+      <div *ngIf="type.errors?.['required']">
+        Không được để trống
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Tên nhà xe: </label>
+    <input type="text" class="form-control" formControlName="house">
+    <div *ngIf="house.invalid && (house.touched || house.dirty)" class="alert alert-danger">
+      <div *ngIf="house.errors?.['required']">
+        Không được để trống
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Điểm đi: </label>
+    <select formControlName="arrive">
+      <option >Đà Nẵng</option>
+      <option >Quảng Bình</option>
+      <option >Huế</option>
+    </select>
+    <div *ngIf="arrive.invalid && (arrive.touched || arrive.dirty)" class="alert alert-danger">
+      <div *ngIf="arrive.errors?.['required']">
+        Không được để trống
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Điểm đến: </label>
+    <select formControlName="destination">
+      <option >Đà Nẵng</option>
+      <option >Quảng Bình</option>
+      <option >Huế</option>
+    </select>
+    <div *ngIf="destination.invalid && (destination.touched || destination.dirty)" class="alert alert-danger">
+      <div *ngIf="destination.errors?.['required']">
+        Không được để trống
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Số điện thoại: </label>
+    <input type="text" class="form-control" formControlName="phone">
+    <div *ngIf="phone.invalid && (phone.touched || phone.dirty)" class="alert alert-danger">
+      <div *ngIf="phone.errors?.['required']">
+        Không được để trống
+      </div>
+      <div *ngIf="phone.errors?.['pattern']">
+        Nhập chưa đúng cú pháp
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Email: </label>
+    <input type="text" class="form-control" formControlName="email">
+    <div *ngIf="email.invalid && (email.touched || email.dirty)" class="alert alert-danger">
+      <div *ngIf="email.errors?.['required']">
+        Không được để trống
+      </div>
+      <div *ngIf="email.errors?.['email']">
+        Sai
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Giờ đi: </label>
+    <input type="text" class="form-control" formControlName="startTime">
+    <div *ngIf="startTime.invalid && (startTime.touched || startTime.dirty)" class="alert alert-danger">
+      <div *ngIf="startTime.errors?.['required']">
+        Không được để trống
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Giờ đến: </label>
+    <input type="text" class="form-control" formControlName="endTime">
+    <div *ngIf="endTime.invalid && (endTime.touched || endTime.dirty)" class="alert alert-danger">
+      <div *ngIf="endTime.errors?.['required']">
+        Không được để trống
+      </div>
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-success mt-3 text-center" [disabled]="formEdit.invalid">Lưu</button>
+  <a class="btn btn-primary mt-3 text-center" routerLink="/bus/list" id="back">Thoát</a>
+</form>
+

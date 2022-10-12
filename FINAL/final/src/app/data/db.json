@@ -1,0 +1,37 @@
+{
+  "bus": [
+    {
+      "id": 1231,
+      "type": "Giường nằm",
+      "house": "Mai Linh",
+      "arrive": "Quảng Bình",
+      "destination": "Huế",
+      "phone": "0937123791",
+      "email": "mailinh@gmail.com",
+      "startTime": "13:20",
+      "endTime": "15:00"
+    },
+    {
+      "id": 1222,
+      "type": "Ghế ngồi",
+      "house": "Hoàng Long",
+      "arrive": "Đà Nẵng",
+      "destination": "Huế",
+      "phone": "0937123791",
+      "email": "mailinh@gmail.com",
+      "startTime": "13:20",
+      "endTime": "15:00"
+    },
+    {
+      "id": 2311,
+      "type": "Giường nằm hh ",
+      "house": "Mai Linh",
+      "arrive": "Huế",
+      "destination": "Huế",
+      "phone": "0937123791",
+      "email": "mailinh@gmail.com",
+      "startTime": "13:20",
+      "endTime": "15:00"
+    }
+  ]
+}
