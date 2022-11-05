@@ -23,15 +23,15 @@
       "endTime": "15:00"
     },
     {
-      "id": 2311,
-      "type": "Giường nằm hh ",
-      "house": "Mai Linh",
-      "arrive": "Huế",
+      "id": 12,
+      "type": "a",
+      "house": "a",
+      "arrive": "Đà Nẵng",
       "destination": "Huế",
-      "phone": "0937123791",
-      "email": "mailinh@gmail.com",
-      "startTime": "13:20",
-      "endTime": "15:00"
+      "phone": "0905111111",
+      "email": "a@gmail.com",
+      "startTime": "13:00",
+      "endTime": "14:00"
     }
   ]
 }

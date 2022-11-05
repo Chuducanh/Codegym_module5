@@ -1,0 +1,103 @@
+<h2>Thêm mới xe</h2>
+<form [formGroup]="formCreate" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label>Số xe: </label>
+    <input type="number" class="form-control" formControlName="id">
+    <div *ngIf="formCreate.controls['id'].invalid && (formCreate.controls['id'].touched || formCreate.controls['id'].dirty)" class="alert alert-danger">
+      <div *ngIf="formCreate.controls['id'].errors?.['required']">
+        Không được để trống
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Loại xe: </label>
+    <input type="text" class="form-control" formControlName="type">
+    <div *ngIf="formCreate.controls['type'].invalid && (formCreate.controls['type'].touched || formCreate.controls['type'].dirty)" class="alert alert-danger">
+      <div *ngIf="formCreate.controls['type'].errors?.['required']">
+        Không được để trống
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Tên nhà xe: </label>
+    <input type="text" class="form-control" formControlName="house">
+    <div *ngIf="formCreate.controls['house'].invalid && (formCreate.controls['house'].touched || formCreate.controls['house'].dirty)" class="alert alert-danger">
+      <div *ngIf="formCreate.controls['house'].errors?.['required']">
+        Không được để trống
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Điểm đi: </label>
+    <select formControlName="arrive">
+      <option >Đà Nẵng</option>
+      <option >Quảng Bình</option>
+      <option >Huế</option>
+    </select>
+    <div *ngIf="formCreate.controls['arrive'].invalid && (formCreate.controls['arrive'].touched || formCreate.controls['arrive'].dirty)" class="alert alert-danger">
+      <div *ngIf="formCreate.controls['arrive'].errors?.['required']">
+        Không được để trống
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Điểm đến: </label>
+    <select formControlName="destination">
+      <option >Đà Nẵng</option>
+      <option >Quảng Bình</option>
+      <option >Huế</option>
+    </select>
+    <div *ngIf="formCreate.controls['destination'].invalid && (formCreate.controls['destination'].touched || formCreate.controls['destination'].dirty)" class="alert alert-danger">
+      <div *ngIf="formCreate.controls['destination'].errors?.['required']">
+        Không được để trống
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Số điện thoại: </label>
+    <input type="text" class="form-control" formControlName="phone">
+    <div *ngIf="formCreate.controls['phone'].invalid && (formCreate.controls['phone'].touched || formCreate.controls['phone'].dirty)" class="alert alert-danger">
+      <div *ngIf="formCreate.controls['phone'].errors?.['required']">
+        Không được để trống
+      </div>
+      <div *ngIf="formCreate.controls['phone'].errors?.['pattern']">
+        Nhập chưa đúng cú pháp
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Email: </label>
+    <input type="text" class="form-control" formControlName="email">
+    <div *ngIf="formCreate.controls['email'].invalid && (formCreate.controls['email'].touched || formCreate.controls['email'].dirty)" class="alert alert-danger">
+      <div *ngIf="formCreate.controls['email'].errors?.['required']">
+        Không được để trống
+      </div>
+      <div *ngIf="formCreate.controls['email'].errors?.['email']">
+        Sai
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Giờ đi: </label>
+    <input type="text" class="form-control" formControlName="startTime">
+    <div *ngIf="formCreate.controls['startTime'].invalid && (formCreate.controls['startTime'].touched || formCreate.controls['startTime'].dirty)" class="alert alert-danger">
+      <div *ngIf="formCreate.controls['startTime'].errors?.['required']">
+        Không được để trống
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Giờ đến: </label>
+    <input type="text" class="form-control" formControlName="endTime">
+    <div *ngIf="formCreate.controls['endTime'].invalid && (formCreate.controls['endTime'].touched || formCreate.controls['endTime'].dirty)" class="alert alert-danger">
+      <div *ngIf="formCreate.controls['endTime'].errors?.['required']">
+        Không được để trống
+      </div>
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-success mt-3 text-center" [disabled]="formCreate.invalid">Lưu</button>
+  <a class="btn btn-primary mt-3 text-center" routerLink="/bus/list" id="back">Thoát</a>
+</form>
+
+

@@ -13,20 +13,33 @@ export class BusService {
 
   constructor(private http: HttpClient) { }
 
-  getAll(): Observable<Bus[]> {
-    return this.http.get<Bus[]>(apiUrl + '/bus');
+  getAllWithoutPagination(): Observable<Array<Bus>> {
+    return this.http.get<Array<Bus>>(apiUrl + "/not-pagination");
+  }
+
+  getAll(page): Observable<any[]> {
+    return this.http.get<any[]>(apiUrl + "?page=" + page);
   }
 
   findById(id: number): Observable<Bus> {
-    return this.http.get<Bus>( `${apiUrl}/bus/${id}`);
+    return this.http.get<Bus>( `${apiUrl}/${id}`);
   }
-  // @ts-ignore
+
   delete(id: number): Observable<Bus> {
-    return this.http.delete<Bus>(`${apiUrl}/bus/${id}`);
+    return this.http.delete<Bus>(`${apiUrl}/${id}`);
   }
-  // @ts-ignore
+
   update(id: number, Bus: Bus): Observable<Bus> {
-    return this.http.put<Bus>(`${apiUrl}/bus/${id}`, Bus);
+    return this.http.put<Bus>(`${apiUrl}/${id}`, Bus);
+  }
+
+  create(Bus: Bus) {
+    return this.http.post<Bus>(apiUrl , Bus);
+  }
+
+  search(value, page):Observable<any[]>
+  {
+    return this.http.get<any[]>(apiUrl + "/search?finding=" + value + '&page=' + page);
   }
 
 }

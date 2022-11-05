@@ -6,21 +6,23 @@ import { AppComponent } from './app.component';
 import { BusListComponent } from './bus-list/bus-list.component';
 import { BusEditComponent } from './bus-edit/bus-edit.component';
 import {HttpClientModule} from "@angular/common/http";
-import {ReactiveFormsModule} from "@angular/forms";
-import {NgxPaginationModule} from "ngx-pagination";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { BusCreateComponent } from './bus-create/bus-create.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BusListComponent,
-    BusEditComponent
+    BusEditComponent,
+    BusCreateComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    NgxPaginationModule
+    FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
